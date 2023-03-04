@@ -132,7 +132,7 @@ li {
   display: none;
 }
 
-.titulo-sobre {
+.titulo{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,13 +173,13 @@ li {
   margin-right: 30%;
   text-align: justify;
 }
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -80px;
 }
-.btn button{
+.btn button {
   background-color: #183964;
   color: #fff;
   font-size: 18px;
@@ -190,10 +190,10 @@ li {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.btn button:hover{
+.btn button:hover {
   background-color: #4770a7;
 }
-.formacao{
+.formacao {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +202,7 @@ li {
   font-size: 19px;
   font-family: "Roboto Mono", monospace;
 }
-.formacao-line{
+.formacao-line {
   background-color: #183964;
   height: 7px;
   width: 300px;
@@ -212,11 +212,48 @@ li {
   align-items: center;
   margin-left: 42%;
 }
-.formacao-texto p{
-  margin-top: 20px;
+.senac img{
+  width: 14%;
+  margin-top: -100px;
+  margin-left: 45%;
+  border-radius: 100%;
+}
+.grid{
+  display: grid;
+  grid-gap: 2rem;
+  margin-top: 50px;
   margin-left: 30%;
-  margin-right: 30%;
+}
+.grid-item-tittle{
+  margin-top: 20px;
+  color: #183964;
+  font-size: 19px;
+  font-family: "Roboto Mono", monospace;
+}
+.grid-item-sub{
+  color: #183964;
+  font-size: 19px;
+  font-family: "Roboto Mono", monospace;
   text-align: justify;
+}
+.habilidades{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  color: #183964;
+  font-size: 19px;
+  font-family: "Roboto Mono", monospace;
+}
+.habilidades-line{
+  background-color: #183964;
+  height: 7px;
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 42%;
 }
 
 @media (max-width: 999px) {
@@ -309,14 +346,35 @@ li {
     text-align: justify;
     margin-top: 0;
   }
-  .btn{
+  .btn {
     margin-top: 60px;
   }
-  .formacao{
+  .formacao {
     margin-top: 100px;
     font-size: 17px;
   }
-  .formacao-line{
+  .formacao-line, .habilidades-line {
     margin-left: 18%;
   }
+  .formacao-texto p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+  }
+  .grid{
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .grid-item-sub{
+    font-size: 17px;
+  }
+  .grid-item-tittle{
+    font-size: 15px;
+  }
+  .senac img{
+    width: 27%;
+    margin-top: -70px;
+    margin-left: 50%;
+  }
+
 }
